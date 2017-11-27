@@ -52,7 +52,7 @@ function hidden_elements(items,field){
         for (let index = 0; index < item.length; index++) {
             const element = item[index].pattern;
             try {
-                document.querySelector(element).hidden = true;
+                $(element).hide();
             } catch (error) {
                 console.log(element + " not found");
             }
